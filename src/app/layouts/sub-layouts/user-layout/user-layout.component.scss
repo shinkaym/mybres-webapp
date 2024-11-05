@@ -1,0 +1,30 @@
+.user-layout{
+    &-header{
+        background: #37d976;
+
+        &-wrapper{
+            padding: 0 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &-item{
+            padding: 16px 0 12px;
+            width: 25%;
+            text-align: center;
+            text-decoration: none;
+            border-bottom: 4px solid #37d976;
+            color:#d8d6d6;
+        }
+
+        &-item.active{
+            border-bottom: 4px solid #fff;
+            color:#fff;
+        }
+    }
+    
+    &-content{
+        padding: 0 12px;
+    }
+}

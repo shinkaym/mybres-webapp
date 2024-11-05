@@ -1,0 +1,27 @@
+.previous-layout{
+    &-header{
+        background: #1a2948;
+        padding: 16px 12px;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        position: relative;
+
+        &-btn{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 12px;
+            cursor: pointer;
+        }
+
+        &-title{
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    &-content{
+        padding: 0 12px;
+    }
+}

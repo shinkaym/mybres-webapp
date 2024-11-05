@@ -24,7 +24,7 @@ export const routes: Routes = [
       { path: 'register', component: RegisterComponent },
       { path: 'forgot-password', component: ForgotPasswordComponent },
       {
-        path: 'championship/:slug',
+        path: 'championship/detail/:slug',
         component: ChampionshipDetailComponent,
       },
     ],
@@ -34,7 +34,7 @@ export const routes: Routes = [
     component: NavbarLayoutComponent,
     children: [
       {
-        path: 'championship',
+        path: 'championship/:type',
         component: ChampionshipLayoutComponent,
         children: [{ path: '', component: ChampionshipComponent }],
       },

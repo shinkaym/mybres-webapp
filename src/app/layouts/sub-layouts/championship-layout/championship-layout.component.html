@@ -1,4 +1,34 @@
 <div class="championship-layout">
-  <h1>championship layout</h1>
-  <router-outlet></router-outlet>
+  <div class="championship-layout-title">
+    MYBRES CHAMPIONSHIP SYSTEM
+  </div>
+  <div class="championship-layout-header">
+    <div class="championship-layout-header-wrapper">
+      <a routerLink="profile" class="championship-layout-header-item active">
+        MBBA
+      </a>
+      <a routerLink="activity" class="championship-layout-header-item">
+        MBPA
+      </a>
+      <a routerLink="group" class="championship-layout-header-item">
+        MBTTA
+      </a>
+      <a routerLink="partner" class="championship-layout-header-item">
+        MBCA
+      </a>
+    </div>
+  </div>
+  <div class="championship-layout-intro">
+    <div class="championship-layout-intro-title">
+      MYBRES BADMINTON ASSOCIATION (MBBA)
+    </div>
+    <div class="championship-layout-intro-content">
+      Hệ thống giải đấu cầu lông có tính điểm thuộc
+      <br/>
+      MYBRES ASSOCIATION
+    </div>
+  </div>
+  <div class="championship-layout-content">
+    <router-outlet></router-outlet>
+  </div>
 </div>
