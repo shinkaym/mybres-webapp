@@ -84,6 +84,11 @@
         display: block;
         width: 80px;
       }
+      > a:nth-child(2) {
+        & img:nth-child(1) {
+          transform: scale(1.1);
+        }
+      }
     }
     > span {
       font-size: 18px;

@@ -77,11 +77,18 @@
       margin-top: 13px;
       margin-bottom: 10px;
       display: flex;
-      align-items: center;
+      // align-items: center;
       justify-content: center;
       > a {
-        display: block;
+        display: inline-block;
         width: 80px;
+        height: 80px;
+        overflow: hidden;
+      }
+      > a:nth-child(2) {
+        & img:nth-child(1) {
+          transform: scale(1.1);
+        }
       }
     }
     > span {
