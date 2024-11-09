@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { RouterModule, RouterOutlet } from '@angular/router';
 
 @Component({
@@ -8,6 +8,7 @@ import { RouterModule, RouterOutlet } from '@angular/router';
   templateUrl: './championship-layout.component.html',
   styleUrl: './championship-layout.component.scss'
 })
+  
 export class ChampionshipLayoutComponent {
 
 }

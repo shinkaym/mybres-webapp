@@ -4,10 +4,21 @@
         color: #fff;
         text-align: center;
         padding: 18px 0;
+        position: fixed;
+        top:0;
+        left: calc(50% - 225px);
+        right: calc(50% - 225px);
+        z-index: 100;
+        font-size: 18px;
     }
 
     &-header{
         background: #1a2948;
+        position: fixed;
+        top:54px;
+        left: calc(50% - 225px);
+        right: calc(50% - 225px);
+        z-index: 100;
 
         &-wrapper{
             padding: 0 12px;
@@ -23,30 +34,18 @@
             text-decoration: none;
             border-bottom: 4px solid #1a2948;
             color:#d8d6d6;
+            font-size: 14px;
+            transition: 0.25s;
+        }
+
+        &-item:hover{
+            opacity: 0.6;
+            transition: 0.25s;
         }
 
         &-item.active{
             border-bottom: 4px solid #fff;
             color:#fff;
         }
-    }
-    
-    &-intro{
-        background: #9b27b0;
-        text-align: center;
-        padding: 16px 0;
-
-        &-title{
-            color: #fff;
-            margin-bottom: 6px;
-        }
-
-        &-content{
-            color: #dddcdc;
-        }
-    }
-    
-    &-content{
-        padding: 0 12px;
     }
 }

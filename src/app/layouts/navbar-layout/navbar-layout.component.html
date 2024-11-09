@@ -4,10 +4,10 @@
   </div>
   <div class="navbar-layout-navbar">
     <div class="navbar-layout-navbar-wrapper">
-      <a class="navbar-layout-navbar-item" routerLink="championship/123">
+      <a class="navbar-layout-navbar-item" [class.active]="currentPage == 'championship'" routerLink="championship/123">
         <i class="fa-solid fa-trophy"></i>
       </a>
-      <a class="navbar-layout-navbar-item active" routerLink="profile">
+      <a class="navbar-layout-navbar-item" [class.active]="currentPage == 'user'" routerLink="profile">
         <i class="fa-solid fa-user"></i>
       </a>
     </div>

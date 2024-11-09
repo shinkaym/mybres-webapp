@@ -36,7 +36,7 @@ export const routes: Routes = [
       {
         path: 'championship/:type',
         component: ChampionshipLayoutComponent,
-        children: [{ path: '', component: ChampionshipComponent }],
+        children: [{ path: '', component: ChampionshipComponent }]
       },
       {
         path: '',
@@ -46,7 +46,7 @@ export const routes: Routes = [
           { path: 'activity', component: ActivityComponent },
           { path: 'group', component: GroupComponent },
           { path: 'partner', component: PartnerComponent },
-        ],
+        ]
       },
     ],
   },

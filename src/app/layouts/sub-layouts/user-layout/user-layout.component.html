@@ -1,16 +1,16 @@
 <div class="user-layout">
   <div class="user-layout-header">
     <div class="user-layout-header-wrapper">
-      <a routerLink="profile" class="user-layout-header-item active">
+      <a routerLink="profile" class="user-layout-header-item" [class.active]="currentUserPage == 'profile'">
         Cá nhân
       </a>
-      <a routerLink="activity" class="user-layout-header-item">
+      <a routerLink="activity" class="user-layout-header-item" [class.active]="currentUserPage == 'activity'">
         Hoạt động
       </a>
-      <a routerLink="group" class="user-layout-header-item">
+      <a routerLink="group" class="user-layout-header-item" [class.active]="currentUserPage == 'group'"> 
         Nhóm
       </a>
-      <a routerLink="partner" class="user-layout-header-item">
+      <a routerLink="partner" class="user-layout-header-item" [class.active]="currentUserPage == 'partner'">
         Đồng đội
       </a>
     </div>
