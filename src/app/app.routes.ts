@@ -15,17 +15,18 @@ import { ChampionshipLayoutComponent } from './layouts/sub-layouts/championship-
 import { PreviousLayoutComponent } from './layouts/previous-layout/previous-layout.component';
 
 export const routes: Routes = [
-  { path: '', component: IntroComponent },
+  { path: '', component: IntroComponent, title: 'Trang Intro' },
   {
     path: '',
     component: PreviousLayoutComponent,
     children: [
-      { path: 'login', component: LoginComponent },
-      { path: 'register', component: RegisterComponent },
-      { path: 'forgot-password', component: ForgotPasswordComponent },
+      { path: 'login', component: LoginComponent, title: 'Đăng nhập' },
+      { path: 'register', component: RegisterComponent, title: 'Đăng ký' },
+      { path: 'forgot-password', component: ForgotPasswordComponent, title: 'Quên mật khẩu' },
       {
         path: 'championship/detail/:slug',
         component: ChampionshipDetailComponent,
+        title: 'Chi tiết giải đấu',
       },
     ],
   },
@@ -50,4 +51,8 @@ export const routes: Routes = [
       },
     ],
   },
+  {
+    path: '**',
+    redirectTo: '',
+  }
 ];
