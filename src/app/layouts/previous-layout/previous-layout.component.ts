@@ -35,4 +35,8 @@ export class PreviousLayoutComponent {
       }
     });
   }
+
+  ngOnDestroy() {
+    this.routeSub.unsubscribe();
+  }
 }
